@@ -1,7 +1,3 @@
-variable "github_token" {
-  type    = string
-  default = "ghp_nT657d6lLsIB3i0gUaIA7svjbUtv2M0LO"
-}
 
 provider "github" {
   token = var.github_token
@@ -15,3 +11,6 @@ resource "github_repository" "terraform-learning-repo" {
   auto_init  = true
 }
 # terraform destroy --target=github_repository.terraform-learning-repo
+#terraform providers
+#terraform refresh
+#terraform validate
